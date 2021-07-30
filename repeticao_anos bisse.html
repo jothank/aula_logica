@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Repetição</title>
+</head>
+<body>
+<script>    
+    var ano = 1004;
+
+    for (var i=1; ano<=2018; i++){
+
+        if (!(ano % 100 === 0) || (ano % 400 ===0)){
+            document.write('Ano: ' + (ano) + '<br>');
+        } else {
+            document.write('Ano: ' + ano + ' não é bissexto. <br>')
+        }
+        ano = ano + 4;  
+    }
+
+    document.write('Contador encerrou')
+</script>    
+</body>
+</html>
